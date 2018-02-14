@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+}
+
+#header {
+	height: 100px;
+	margin: 0;
+}
+
+#title {
+	font-family: 'Russo One', sans-serif;
+}
