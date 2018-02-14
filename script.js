@@ -13,6 +13,11 @@ $(document).ready(function() {
 		    	 "Authorization": "Basic " + btoa("kalinj" + ":" + "EagleScout99")
 		    },
 		    success : function(json) {
+		    	if (!json.cumulativeplayerstats.hasOwnProperty("playerstatsentry")) {
+		    		results = "<p>That player did not play in the 2017-18 season.</p>";
+		    		$("#results").html(results);
+		    		return;
+		    	}
 				var results = "";
 				console.log(json);
 				results += "<h2 style=\"font-family: 'Russo One', sans-serif;\">Stats for " + json.cumulativeplayerstats.playerstatsentry[0].player.FirstName + " " 
