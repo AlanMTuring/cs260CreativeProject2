@@ -46,6 +46,19 @@ form {
 }
 
 
+#stats-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#stat-titles {
+	text-align: left;
+}
+
+#stats {
+	text-align: right;
+}
 
 
 
