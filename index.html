@@ -1,9 +1,10 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Sportz!</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script text="type/javascript" src="/script.js"></script>
     </head>
     <body>
         <div id="header">
@@ -11,16 +12,25 @@
         </div>
         
         
-        <div class="flex-container">
-            <div id="image-wrap"><img id="home-image" src="/pics/album_cover.jpg" alt="Album Cover"></div>
-            <div id="home-text">
-                <p>Meet</p>
-                <p>Kalin Nelson</p>
-                <p>Musician, Singer, Songwriter, Solo Artist, and Collaborative Extraordinaire.</p>
-                <p>Buy his best-selling album, "Krazy", now!</p>
-            </div>
-        </div>
+    <div class="flex-container">
+      
+      <div class="margin"></div>
 
+      <div class="flex-item">
+        <h1>Enter the last name of an NBA player to see their stats!</h1>
+        <form>
+          <label>Name</label>
+          <input id="input" type="text"></input><br/>
+          <input id="submit" type="submit" value="Submit"></input>
+        </form>
+        <div id="results">
+          <!-- will be filled by API data -->
+        </div>
+      </div>
+
+      <div class="margin"></div>
+      
+    </div>
 
 
         <footer>
