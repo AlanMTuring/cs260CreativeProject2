@@ -14,7 +14,7 @@ $(document).ready(function() {
 		    },
 		    success : function(json) {
 		    	if (!json.cumulativeplayerstats.hasOwnProperty("playerstatsentry")) {
-		    		results = "<p>That player did not play in the 2017-18 season.</p>";
+		    		results = "<p>That player did not play in the 2016-17 season.</p>";
 		    		$("#results").html(results);
 		    		return;
 		    	}
